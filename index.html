@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test task</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a class="menu" href="#">О нас</a></li>
+            <li><a class="menu" href="#">Информация для покупателей</a></li>
+            <li><a class="menu" href="#">Отзывы</a></li>
+            <li><a class="menu" href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="http://placehold.it/180x75" width="180" height="75" alt="Main logo">
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <a class="phone" href="tel: +375291234567">+375 (29) <span>123 45 67</span> </a>
+            <a class="phone-icon" href="tel: +375291234567"><i class="fa fa-phone" aria-hidden="true"></i></a>
+
+          </div>
+          <div class="col-md-2 col-sm-4 hidden-xs">
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal">Обратный звонок</button>
+            <!-- Modal window -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Обратный звонок</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="control-label">Ваше имя:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-tel" class="control-label">Ваше телефон:</label>
+                        <input type="tel" class="form-control" id="recipient-tel">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal window -->
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="login">
+              <a href="#">Вход</a> <span>&ensp;/&ensp;</span>
+              <a href="#">Регистрация</a>
+              <p>(скидка на 2% на все)</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="basket">
+              <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+              <p>Корзина <br> 120.00 руб</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalogue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-sm-12">
+            <ul class="catalogue-items">
+              <li><a href="#">Туалетная вода</a></li>
+              <li><a href="#">Парфюмированная вода</a></li>
+              <li><a href="#">Адеколон</a></li>
+              <li><a href="#">Духи</a></li>
+              <li><a href="#">Дезадоранты</a></li>
+              <li><a href="#">Наборы</a></li>
+              <li><a href="#">Косметика</a></li>
+              <li><a href="#">Бренды</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <form class="catalogue-form">
+              <div class="form-group">
+                <input class="form-control" type="tel" placeholder="Поиск по каталогу...">
+              </div>
+              <button type="submit" class="btn btn-default">Найти</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="http://placehold.it/1200x420" alt="Slider-image">
+              <div class="carousel-caption hidden-xs">
+                <h2 class="text-left">Действительно<br> низкие цены!</h2>
+                <p class="text-left">Торопитесь купить любимые духи<br>со скидкой до 50%</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="http://placehold.it/1200x420" alt="Slider-image">
+              <div class="carousel-caption hidden-xs">
+                <h2 class="text-left">Действительно<br> низкие цены!</h2>
+                <p class="text-left">Торопитесь купить любимые духи<br>со скидкой до 50%</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="http://placehold.it/1200x420" alt="Slider-image">
+              <div class="carousel-caption hidden-xs">
+                <h2 class="text-left">Действительно<br> низкие цены!</h2>
+                <p class="text-left">Торопитесь купить любимые духи<br>со скидкой до 50%</p>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control hidden-xs" href="#myCarousel" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control hidden-xs" href="#myCarousel" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="items">
+      <article class="items-tabs">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Скидки</a></li>
+                <li><a data-toggle="tab" href="#menu1">Новинки</a></li>
+                <li><a data-toggle="tab" href="#menu2">Популярное</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product text-center">
+                      <a class="product-image" data-lightbox="image-1" data-title="Agent Provocateur for women" href="http://placehold.it/380x430">
+                        <div class="product-discount">15%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">Agent Provocateur for<br>women</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">50 мл</p>
+                      <p class="product-cost"><span>99руб.</span><b>&ensp;79 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-2 text-center">
+                      <a class="product-image" data-lightbox="image-2" data-title="Agent Provocateur for women" href="http://placehold.it/380x430">
+                        <div class="product-discount">15%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">Agent Provocateur for<br>women</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">50 мл</p>
+                      <p class="product-cost"><span>99руб</span><b>&ensp;79 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-3 text-center">
+                      <a class="product-image" data-lightbox="image-3" data-title="Agent Provocateur for women" href="http://placehold.it/380x430">
+                        <div class="product-discount">15%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">Agent Provocateur for<br>women</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">50 мл</p>
+                      <p class="product-cost"><span>99руб</span><b>&ensp;79 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-4 text-center">
+                      <a class="product-image" data-lightbox="image-4" data-title="Agent Provocateur for women" href="http://placehold.it/380x430">
+                        <div class="product-discount">15%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">Agent Provocateur for<br>women</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">50 мл</p>
+                      <p class="product-cost"><span>99руб</span><b>&ensp;79 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-5 text-center">
+                      <a class="product-image" data-lightbox="image-5" data-title="Agent Provocateur for women" href="http://placehold.it/380x430">
+                        <div class="product-discount">15%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">Agent Provocateur for<br>women</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">50 мл</p>
+                      <p class="product-cost"><span>99руб</span><b>&ensp;79 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-6 text-center">
+                      <a class="product-image" data-lightbox="image-6" data-title="Agent Provocateur for women" href="http://placehold.it/380x430">
+                        <div class="product-discount">15%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">Agent Provocateur for<br>women</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">50 мл</p>
+                      <p class="product-cost"><span>99руб</span><b>&ensp;79 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-7 text-center">
+                      <a class="product-image" data-lightbox="image-7" data-title="Agent Provocateur for women" href="http://placehold.it/380x430">
+                        <div class="product-discount">15%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">Agent Provocateur for<br>women</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">50 мл</p>
+                      <p class="product-cost"><span>99руб</span><b>&ensp;79 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-8 text-center">
+                      <a class="product-image" data-lightbox="image-8" data-title="Agent Provocateur for women" href="http://placehold.it/380x430">
+                        <div class="product-discount">15%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">Agent Provocateur for<br>women</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">50 мл</p>
+                      <p class="product-cost"><span>99руб</span><b>&ensp;79 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product text-center">
+                      <a class="product-image" data-lightbox="image-11" data-title="He Wood by Dsquared2" href="http://placehold.it/380x430">
+                        <div class="product-discount">New!</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">He Wood by Dsquared2</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">100 мл</p>
+                      <p class="product-cost"><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-2 text-center">
+                      <a class="product-image" data-lightbox="image-12" data-title="He Wood by Dsquared2" href="http://placehold.it/380x430">
+                        <div class="product-discount">New!</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">He Wood by Dsquared2</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">100 мл</p>
+                      <p class="product-cost"><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-3 text-center">
+                      <a class="product-image" data-lightbox="image-13" data-title="He Wood by Dsquared2" href="http://placehold.it/380x430">
+                        <div class="product-discount">New!</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">He Wood by Dsquared2</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">100 мл</p>
+                      <p class="product-cost"><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-4 text-center">
+                      <a class="product-image" data-lightbox="image-14" data-title="He Wood by Dsquared2" href="http://placehold.it/380x430">
+                        <div class="product-discount">New!</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">He Wood by Dsquared2</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">100 мл</p>
+                      <p class="product-cost"><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-5 text-center">
+                      <a class="product-image" data-lightbox="image-15" data-title="He Wood by Dsquared2" href="http://placehold.it/380x430">
+                        <div class="product-discount">New!</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">He Wood by Dsquared2</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">100 мл</p>
+                      <p class="product-cost"><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-6 text-center">
+                      <a class="product-image" data-lightbox="image-16" data-title="He Wood by Dsquared2" href="http://placehold.it/380x430">
+                        <div class="product-discount">New!</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">He Wood by Dsquared2</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">100 мл</p>
+                      <p class="product-cost"><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-7 text-center">
+                      <a class="product-image" data-lightbox="image-17" data-title="He Wood by Dsquared2" href="http://placehold.it/380x430">
+                        <div class="product-discount">New!</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">He Wood by Dsquared2</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">100 мл</p>
+                      <p class="product-cost"><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-8 text-center">
+                      <a class="product-image" data-lightbox="image-18" data-title="He Wood by Dsquared2" href="http://placehold.it/380x430">
+                        <div class="product-discount">New!</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">He Wood by Dsquared2</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">100 мл</p>
+                      <p class="product-cost"><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product text-center">
+                      <a class="product-image" data-lightbox="image-21" data-title="BVLGARI Aqva Atlantiqve" href="http://placehold.it/380x430">
+                        <div class="product-discount">80%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">BVLGARI Aqva Atlantiqve</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">150 мл</p>
+                      <p class="product-cost"><span>199руб.</span><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-2 text-center">
+                      <a class="product-image" data-lightbox="image-22" data-title="BVLGARI Aqva Atlantiqve" href="http://placehold.it/380x430">
+                        <div class="product-discount">80%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">BVLGARI Aqva Atlantiqve</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">150 мл</p>
+                      <p class="product-cost"><span>199руб.</span><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-3 text-center">
+                      <a class="product-image" data-lightbox="image-23" data-title="BVLGARI Aqva Atlantiqve" href="http://placehold.it/380x430">
+                        <div class="product-discount">80%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">BVLGARI Aqva Atlantiqve</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">150 мл</p>
+                      <p class="product-cost"><span>199руб.</span><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-4 text-center">
+                      <a class="product-image" data-lightbox="image-24" data-title="BVLGARI Aqva Atlantiqve" href="http://placehold.it/380x430">
+                        <div class="product-discount">80%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">BVLGARI Aqva Atlantiqve</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">150 мл</p>
+                      <p class="product-cost"><span>199руб.</span><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-5 text-center">
+                      <a class="product-image" data-lightbox="image-25" data-title="BVLGARI Aqva Atlantiqve" href="http://placehold.it/380x430">
+                        <div class="product-discount">80%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">BVLGARI Aqva Atlantiqve</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">150 мл</p>
+                      <p class="product-cost"><span>199руб.</span><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-6 text-center">
+                      <a class="product-image" data-lightbox="image-26" data-title="BVLGARI Aqva Atlantiqve" href="http://placehold.it/380x430">
+                        <div class="product-discount">80%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">BVLGARI Aqva Atlantiqve</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">150 мл</p>
+                      <p class="product-cost"><span>199руб.</span><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-7 text-center">
+                      <a class="product-image" data-lightbox="image-27" data-title="BVLGARI Aqva Atlantiqve" href="http://placehold.it/380x430">
+                        <div class="product-discount">80%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">BVLGARI Aqva Atlantiqve</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">150 мл</p>
+                      <p class="product-cost"><span>199руб.</span><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="product product-8 text-center">
+                      <a class="product-image" data-lightbox="image-28" data-title="BVLGARI Aqva Atlantiqve" href="http://placehold.it/380x430">
+                        <div class="product-discount">80%</div>
+                        <img src="http://placehold.it/190x215" width="190" height="215" alt="Item"></a>
+                      <p class="product-title">BVLGARI Aqva Atlantiqve</p>
+                      <p class="product-article">Туалетная вода</p>
+                      <p class="product-volume">150 мл</p>
+                      <p class="product-cost"><span>199руб.</span><b>&ensp;109 руб</b></p>
+                      <a class="btn btn-default" href="#">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="brands">
+        <h3 class="text-center">Популярные бренды</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-2" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-3" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-4" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-5" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-6" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-7" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-8" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-9" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-10" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-11" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <img class="brands-item brand-12" src="http://placehold.it/135x77" width="135" height="77" alt="Item">
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="consultation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4">
+              <div class="circle">
+                <p class="circle-text">
+                  Нужна <br> консультация?
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-8">
+              <h4>Оставьте свой номер, и мы свяжемся с вами!</h4>
+            </div>
+            <div class="col-lg-4 col-md-5 col-xs-12">
+              <form class="consultation-form form-inline">
+                <div class="form-group">
+                  <input class="form-control" type="search" placeholder="+375 (29) 123-45-67">
+                </div>
+                <button type="submit" class="btn btn-default">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="footer-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4">
+            <div class="footer-shop">
+              <h4>О магазине</h4>
+              <img src="http://placehold.it/120x68" width="120" height="68" alt="Main logo">
+              <p class="footer-shop-link"><a href="#">parfumeria-test.by</a></p>
+              <p class="footer-shop-minsk">Элитная парфюмерия в Минске<br> по низким ценам</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="footer-catalogue">
+              <h4>Каталог</h4>
+              <ul>
+                <li><a href="#">Туалетная вода</a></li>
+                <li><a href="#">Парфюмированная вода</a></li>
+                <li><a href="#">Адеколон</a></li>
+                <li><a href="#">Духи</a></li>
+                <li><a href="#">Дезадоранты</a></li>
+                <li><a href="#">Наборы</a></li>
+                <li><a href="#">Косметика</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="footer-buyer">
+              <h4>Покупателям</h4>
+              <ul>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Возврат товара</a></li>
+                <li><a href="#">Пубичная оферта</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-contacts">
+              <h4>Контакты</h4>
+              <a class="phone" href="tel: +375291234567">+375 (29) <span>123 45 67</span> </a>
+              <p><a href="mailto: info@parfumeria-test.by">info@parfumeria-test.by</a></p>
+              <div class="social-icons">
+                <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-copright">
+      <div class="container">
+        <div class="col-lg-12">
+          <div class="footer-copyright-text">
+            <p>ООО «Парфюмерия» УНП 1911111111 <br>Информация о регистрации в торговом реестре</p>
+            <p class="pull-right"><a href="https://www.qmedia.by/">Разработано Qmedia</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Scroll-Up -->
+  <div class="scroll-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+
+  <!-- Spinner -->
+  <div class="spinner"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
