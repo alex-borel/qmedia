@@ -374,7 +374,7 @@ a:hover {
   margin-left: -90px;
 }
 
-.consultation {
+.discount {
   height: 120px;
   background-color: #42a5f5;
 }
@@ -392,7 +392,7 @@ a:hover {
 
 .circle-text {
   position: absolute;
-  top: 62px;
+  top: 70px;
   left: 20px;
   text-align: center;
   font-size: 18px;
@@ -400,26 +400,16 @@ a:hover {
   line-height: 24px;
 }
 
-.consultation h4 {
+.discount h4 {
   margin-top: 50px;
   margin-left: 25px;
   font-weight: 700;
 }
 
-.consultation-form {
-  margin-top: 40px;
-  margin-left: -112px;
-}
-
-.consultation-form .form-control {
-  width: 175px;
-  height: 40px;
-}
-
-.consultation-form .btn {
+.discount .btn {
   width: 140px;
   height: 40px;
-  margin-left: 33px;
+  margin-top: 40px;
   font-weight: 700;
 }
 
@@ -539,6 +529,150 @@ a:hover {
   display: none;
 }
 
+.modal-window {
+  z-index: 13;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 379px;
+  height: 574px;
+  border: 1px solid black;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.modal-window h4 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27px;
+  height: 27px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.modal-close i {
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+.modal-close i:hover {
+  color: #0077c2;
+}
+
+.modal-window form {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 28px;
+  border-top: 1px solid black;
+}
+
+.modal-window .form-control {
+  width: 328px;
+  height: 34px;
+}
+
+.modal-window .form-control:valid {
+  border-color: green;
+}
+
+.form-email {
+  margin-top: 20px;
+}
+
+.form-date {
+  position: relative;
+  margin-top: 20px;
+}
+
+.form-date i {
+  position: absolute;
+  top: 27px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-required {
+  display: inline-block;
+  width: 135px;
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.modal-window .btn {
+  width: 140px;
+  height: 40px;
+  margin-left: 50px;
+  font-weight: 700;
+}
+
+.form-submit {
+  margin-top: 20px;
+}
+
+.modal-layer {
+  z-index: 10;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-message {
+  z-index: 14;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 350px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  transform: translate(-50%, -50%);
+}
+
+.layer-show {
+  display: block;
+}
+
+.modal-show {
+  display: block;
+  animation: pop 1s;
+}
+
+.modal-message .modal-close {
+  border: none;
+}
+
+@keyframes pop {
+  0% {
+    transform: translate(-50%, -300%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (max-width: 1200px) {
   .main-header .nav {
     margin-left: 0;
@@ -578,11 +712,8 @@ a:hover {
   .circle {
     left: -20px;
   }
-  .consultation h4 {
+  .discount h4 {
     margin-left: 0;
-  }
-  .consultation-form {
-    margin-left: 20px;
   }
   .footer-buyer, .footer-catalogue, .footer-contacts {
     margin-left: 0;
@@ -625,15 +756,14 @@ a:hover {
     margin-right: auto;
     margin-left: auto;
   }
-  .consultation {
+  .discount {
     height: auto;
+  }
+  .discount .btn {
+    margin-left: -40px;
   }
   .circle {
     left: 0;
-  }
-  .consultation-form {
-    margin-bottom: 50px;
-    margin-left: 100px;
   }
   .footer-contacts {
     margin-top: 250px;
@@ -688,19 +818,15 @@ a:hover {
     left: 50%;
     margin-left: -85px;
   }
-  .consultation h4 {
+  .discount {
     text-align: center;
   }
-  .consultation-form {
+  .discount h4 {
+    margin-top: -5px;
+  }
+  .discount .btn {
+    margin-bottom: 30px;
     margin-left: 0;
-    text-align: center;
-  }
-  .consultation-form .form-control {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .consultation-form .btn {
-    margin-left: 0px;
   }
   .footer-buyer, .footer-catalogue, .footer-contacts, .footer-info {
     margin-top: 40px;
@@ -723,5 +849,39 @@ a:hover {
   .scroll-up {
     right: 20px;
     bottom: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  .modal-window {
+    top: 55%;
+    width: 300px;
+    height: 500px;
+  }
+  .modal-window h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .modal-window .form-control {
+    width: 250px;
+  }
+  .checkbox {
+    font-size: 12px;
+  }
+  .form-email {
+    margin-top: 0;
+  }
+  .form-date {
+    margin-top: 0;
+  }
+  .form-submit {
+    margin-top: 0;
+  }
+  .modal-window .btn {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
   }
 }

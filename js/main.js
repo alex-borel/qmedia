@@ -31,4 +31,46 @@ $(function() {
     return false;
   });
 
+  $('#date').click(function() {
+    $('#myDate').datepicker();
+  });
+
+});
+
+var myButton = document.getElementById('myButton');
+var myModal = document.querySelector('.modal-window');
+var myLayer = document.querySelector('.modal-layer');
+var myClose = document.querySelector('.modal-window i');
+var myForm = document.getElementById('myForm');
+var myMessage = document.querySelector('.modal-message');
+var closeMessage = document.querySelector('.modal-message i');
+
+myButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  myModal.classList.add('modal-show');
+  myLayer.classList.add('layer-show');
+});
+
+myClose.addEventListener('click', function() {
+  myModal.classList.remove('modal-show');
+  myLayer.classList.remove('layer-show');
+});
+
+myForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  myModal.classList.remove('modal-show');
+  myMessage.classList.add('modal-show');
+});
+
+closeMessage.addEventListener('click', function() {
+  myMessage.classList.remove('modal-show');
+  myLayer.classList.remove('layer-show');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode === 27) {
+    myModal.classList.remove('modal-show');
+    myLayer.classList.remove('layer-show');
+    myMessage.classList.remove('modal-show');
+  }
 });
